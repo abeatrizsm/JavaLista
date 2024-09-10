@@ -4,24 +4,41 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner prompt = new Scanner(System.in);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        Conta conta1 = new Conta("987.654.321-03", "041", 19000.50, (byte)1);
+        Conta conta2 = new Conta("912.345.678-90", "312", 129000.99, (byte)2);
 
         
+        System.out.println(conta1);
+        System.out.println(conta2);
+        conta1.deposito(300);
+        conta2.saque(6000);
+        conta2.transferencia(conta1, 200);
+        System.out.println(conta1);
+        System.out.println(conta2);
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         // --------------- Pessoa -------------------------
