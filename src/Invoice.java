@@ -51,7 +51,7 @@ public class Invoice {
                 "\nQuantidade: " + quantidade +
                 "\nPreço: " + preco +
                 "\nValor total: " + String.format("%.2f", calcularFatura()) + 
-                "\n_________________________________________";
+                "\n---------------------------------------";
     }
 }
 

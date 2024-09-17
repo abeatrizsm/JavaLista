@@ -4,41 +4,50 @@ public class Main {
     public static void main(String[] args) throws Exception {
          Scanner prompt = new Scanner(System.in);
 
-         Invoice invoice = new Invoice("DNF@#A23kL", 1, 239.99);
-         System.out.println(invoice);
-         invoice.setPreco(-23.99);
-         invoice.setQuantidade(-10);
-         System.out.println(invoice);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //------------------------- Invoice ----------------------------------------------------------------
+
+        //  Invoice invoice = new Invoice("DNF@#A23kL", 20, 239.99);
+        //  System.out.println(invoice);
+        //  invoice.setPreco(-23.99);
+        //  invoice.setQuantidade(-10);
+        //  System.out.println(invoice);
+
+
+        // -------------------- empregado -----------------------------------------------------------------
+
+        Empregado empregado1 = new Empregado("Beatriz", "Silveira", 100000);
+        Empregado empregado2 = new Empregado("Bia", "Bioca", 100000);
+
+        System.out.println("Salário sem aumento: " + empregado1.getSalarioMensal());
+        empregado1.fornecerAumento();
+        System.out.println("Salário com aumento: " + String.format("%.2f", empregado1.getSalarioMensal()));
+        System.out.println(empregado2);
+        empregado2.setNome("Beatriz");
+        System.out.println(empregado2);
          
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        // ----------------------- Pessoa Encapsulada -------------------------------------------------------
+        // ----------------------- Pessoa Encapsulada ------------------------------------------------------
         
 
         // PessoaE pessoa1 = new PessoaE();
