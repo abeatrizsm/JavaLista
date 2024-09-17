@@ -52,9 +52,9 @@ public class Imovel {
         return valorCompra;
     }
 
-    public double calcularIptu(){
+    //public double calcularIptu(){
         
-    }
+    //}
 
 
 }

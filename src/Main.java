@@ -2,17 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Scanner prompt = new Scanner(System.in);
+         Scanner prompt = new Scanner(System.in);
 
-        PessoaE pessoa1 = new PessoaE();
-        pessoa1.setNome("Ana Beatriz");
-        pessoa1.setCpf("012.345.678-96");
-        pessoa1.setAno((short)2006);
-        pessoa1.setAltura(1.50f);
-
-        System.out.println(pessoa1);
-        System.out.println("A idade de " + pessoa1.getNome() + " é igual a " + pessoa1.calcularIdade() + " anos.");
-
+         Invoice invoice = new Invoice("DNF@#A23kL", 1, 239.99);
+         System.out.println(invoice);
+         invoice.setPreco(-23.99);
+         invoice.setQuantidade(-10);
+         System.out.println(invoice);
+         
+        
         
 
 
@@ -25,7 +23,34 @@ public class Main {
 
 
 
-        //------------ Produtos----------------------------
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        // ----------------------- Pessoa Encapsulada -------------------------------------------------------
+        
+
+        // PessoaE pessoa1 = new PessoaE();
+        // pessoa1.setNome("Ana Beatriz");
+        // pessoa1.setCpf("012.345.678-96");
+        // pessoa1.setAno((short)2006);
+        // pessoa1.setAltura(1.50f);
+
+        // System.out.println(pessoa1);
+        // System.out.println("A idade de " + pessoa1.getNome() + " é igual a " + pessoa1.calcularIdade() + " anos.");
+
+        //------------ Produtos-------------------------------------------------------------------------------
 
         // System.out.println("Insira o número de produtos:");
         // int n = prompt.nextInt();
@@ -45,7 +70,6 @@ public class Main {
         
         // n = n-1;
 
-
         // System.out.println("O número de produtos que tem peso maior que 10kg e valor menor que R$50,00, é igual a: " + produtos[n].contar(produtos));
         // System.out.println("A média do peso dos produtos é igual a: " + produtos[n].mediaDosPesos(produtos));
         // System.out.println("O produto mais leve é: ");
@@ -54,7 +78,7 @@ public class Main {
         // produtos[n].produtoCaro(produtos);
         // System.out.println("A media dos valores cujo peso do produto é maior que 10 é igual a: " + produtos[n].mediaValores(produtos));
 
-        // --------------------- conta --------------------------------
+        // --------------------- conta ---------------------------------------------------------------------------
 
         // Conta conta1 = new Conta("987.654.321-03", "041", 19000.50, (byte)1);
         // Conta conta2 = new Conta("912.345.678-90", "312", 129000.99, (byte)2);
@@ -67,7 +91,7 @@ public class Main {
         // System.out.println(conta1);
         // System.out.println(conta2);
 
-        // --------------- Pessoa -------------------------
+        // --------------- Pessoa ---------------------------------------------------------------------------------
         // Pessoa pessoa1 = new Pessoa();
         // System.out.println("Insira seu nome: ");
         // pessoa1.nome = prompt.next();
