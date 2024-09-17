@@ -5,26 +5,15 @@ public class Main {
          Scanner prompt = new Scanner(System.in);
 
 
+         //---------------------- Ponto2D ---------------------------------------------------------------------
 
+         Ponto2D ponto1 = new Ponto2D(5,6);
+         Ponto2D ponto2 = new Ponto2D(5,6);
+         Ponto2D ponto3 = new Ponto2D(7,8);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+         ponto1.pontosIguais(ponto2);
+         System.out.println("A distância entre os pontos é: " + String.format("%.2f", ponto3.distancia(ponto1)));
+        
 
         //------------------------- Invoice ----------------------------------------------------------------
 
@@ -37,15 +26,15 @@ public class Main {
 
         // -------------------- empregado -----------------------------------------------------------------
 
-        Empregado empregado1 = new Empregado("Beatriz", "Silveira", 100000);
-        Empregado empregado2 = new Empregado("Bia", "Bioca", 100000);
+        // Empregado empregado1 = new Empregado("Beatriz", "Silveira", 100000);
+        // Empregado empregado2 = new Empregado("Bia", "Bioca", 100000);
 
-        System.out.println("Salário sem aumento: " + empregado1.getSalarioMensal());
-        empregado1.fornecerAumento();
-        System.out.println("Salário com aumento: " + String.format("%.2f", empregado1.getSalarioMensal()));
-        System.out.println(empregado2);
-        empregado2.setNome("Beatriz");
-        System.out.println(empregado2);
+        // System.out.println("Salário sem aumento: " + empregado1.getSalarioMensal());
+        // empregado1.fornecerAumento();
+        // System.out.println("Salário com aumento: " + String.format("%.2f", empregado1.getSalarioMensal()));
+        // System.out.println(empregado2);
+        // empregado2.setNome("Beatriz");
+        // System.out.println(empregado2);
          
         // ----------------------- Pessoa Encapsulada ------------------------------------------------------
         
