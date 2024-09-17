@@ -4,32 +4,16 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner prompt = new Scanner(System.in);
 
-        System.out.println("Insira o número de produtos:");
-        int n = prompt.nextInt();
-        Produto produtos[] = new Produto[n];
+        PessoaE pessoa1 = new PessoaE();
+        pessoa1.setNome("Ana Beatriz");
+        pessoa1.setCpf("012.345.678-96");
+        pessoa1.setAno((short)2006);
+        pessoa1.setAltura(1.50f);
 
-        for (int i = 0; i < n; i++) {
-            Produto produto = new Produto();
-            System.out.println("Insira o código do produto: ");
-            produto.codigo = prompt.next();
-            System.out.println("Insira o peso do produto: ");
-            produto.peso = prompt.nextFloat();
-            System.out.println("Insira o valor do produto: ");
-            produto.valor = prompt.nextDouble();
+        System.out.println(pessoa1);
+        System.out.println("A idade de " + pessoa1.getNome() + " é igual a " + pessoa1.calcularIdade() + " anos.");
 
-            produtos[i] = produto; 
-        }
         
-        n = n-1;
-
-
-        System.out.println("O número de produtos que tem peso maior que 10kg e valor menor que R$50,00, é igual a: " + produtos[n].contar(produtos));
-        System.out.println("A média do peso dos produtos é igual a: " + produtos[n].mediaDosPesos(produtos));
-        System.out.println("O produto mais leve é: ");
-        produtos[n].produtoLeve(produtos);
-        System.out.println("O produto mais caro é: ");
-        produtos[n].produtoCaro(produtos);
-        System.out.println("A media dos valores cujo peso do produto é maior que 10 é igual a: " + produtos[n].mediaValores(produtos));
 
 
 
@@ -41,15 +25,34 @@ public class Main {
 
 
 
+        //------------ Produtos----------------------------
+
+        // System.out.println("Insira o número de produtos:");
+        // int n = prompt.nextInt();
+        // Produto produtos[] = new Produto[n];
+
+        // for (int i = 0; i < n; i++) {
+        //     Produto produto = new Produto();
+        //     System.out.println("Insira o código do produto: ");
+        //     produto.codigo = prompt.next();
+        //     System.out.println("Insira o peso do produto: ");
+        //     produto.peso = prompt.nextFloat();
+        //     System.out.println("Insira o valor do produto: ");
+        //     produto.valor = prompt.nextDouble();
+
+        //     produtos[i] = produto; 
+        // }
+        
+        // n = n-1;
 
 
-
-
-
-
-
-
-
+        // System.out.println("O número de produtos que tem peso maior que 10kg e valor menor que R$50,00, é igual a: " + produtos[n].contar(produtos));
+        // System.out.println("A média do peso dos produtos é igual a: " + produtos[n].mediaDosPesos(produtos));
+        // System.out.println("O produto mais leve é: ");
+        // produtos[n].produtoLeve(produtos);
+        // System.out.println("O produto mais caro é: ");
+        // produtos[n].produtoCaro(produtos);
+        // System.out.println("A media dos valores cujo peso do produto é maior que 10 é igual a: " + produtos[n].mediaValores(produtos));
 
         // --------------------- conta --------------------------------
 
