@@ -4,25 +4,57 @@ public class Main {
     public static void main(String[] args) throws Exception {
          Scanner prompt = new Scanner(System.in);
 
+        //---------------------- Imóvel ---------------------------------------------------------------------
 
-         //---------------------- Ponto2D ---------------------------------------------------------------------
+        //  Imovel imovel = new Imovel((byte)2 , "Marilene", 25.00, true, (short)1902, 1900500);         
+        //  Imovel imovel2 = new Imovel((byte)1, "Claudia", 100.00, false, (short)1989, 500000);         
+        //  Imovel imovel3 = new Imovel((byte)2, "Ana", 75.00, true, (short)2006, 150000);         
 
-         Ponto2D ponto1 = new Ponto2D(5,6);
-         Ponto2D ponto2 = new Ponto2D(5,6);
-         Ponto2D ponto3 = new Ponto2D(7,8);
-
-         ponto1.pontosIguais(ponto2);
-         System.out.println("A distância entre os pontos é: " + String.format("%.2f", ponto3.distancia(ponto1)));
         
+        // System.out.println(imovel);
+        // System.out.println("Valor do IPTU:" + imovel.calcularIptu());
+        // System.out.println("Idade do imóvel: " + imovel.idadeImovel());
+        // System.out.println("Valor de venda: " + imovel.valorDeVenda());
 
-        //------------------------- Invoice ----------------------------------------------------------------
+        //---------------------- Turma ---------------------------------------------------------------------
+        
+        // String alunos[] = {"Ana", "Beatriz", "Luisa"};
+        // int idade[] = {19,20,30};
+        // float medias[] = {8, 10, 5.5f};
+
+        // Turma turma = new Turma(alunos,idade,medias);
+
+        // System.out.println("Aluno mais novo: " + turma.maisNovo());
+        // System.out.println("Numero de aprovados: " + turma.aprovados());
+        // System.out.println("Idade do mais velho: " + turma.idadeMaisVelho());
+
+        //---------------------- Data ---------------------------------------------------------------------
+        
+        //   Data data = new Data(23,1,2006);
+        //   Data data2 = new Data(23,1,2006);
+        //   Data data3 = new Data(23,1,2005);
+
+        //   System.out.println(data);
+        //   System.out.println(data.datasIguais(data2));
+        //   System.out.println(data2.datasIguais(data3));  
+        //   System.out.println(data3.vemAntes(data));        
+
+        //---------------------- Ponto2D ---------------------------------------------------------------------
+
+        //  Ponto2D ponto1 = new Ponto2D(5,6);
+        //  Ponto2D ponto2 = new Ponto2D(5,6);
+        //  Ponto2D ponto3 = new Ponto2D(7,8);
+
+        //  ponto1.pontosIguais(ponto2);
+        //  System.out.println("A distância entre os pontos é: " + String.format("%.2f", ponto3.distancia(ponto1)));
+        
+        //---------------------- Invoice ---------------------------------------------------------------------
 
         //  Invoice invoice = new Invoice("DNF@#A23kL", 20, 239.99);
         //  System.out.println(invoice);
         //  invoice.setPreco(-23.99);
         //  invoice.setQuantidade(-10);
         //  System.out.println(invoice);
-
 
         // -------------------- empregado -----------------------------------------------------------------
 
@@ -38,7 +70,6 @@ public class Main {
          
         // ----------------------- Pessoa Encapsulada ------------------------------------------------------
         
-
         // PessoaE pessoa1 = new PessoaE();
         // pessoa1.setNome("Ana Beatriz");
         // pessoa1.setCpf("012.345.678-96");
@@ -90,6 +121,7 @@ public class Main {
         // System.out.println(conta2);
 
         // --------------- Pessoa ---------------------------------------------------------------------------------
+        
         // Pessoa pessoa1 = new Pessoa();
         // System.out.println("Insira seu nome: ");
         // pessoa1.nome = prompt.next();

@@ -52,9 +52,77 @@ public class Imovel {
         return valorCompra;
     }
 
-    //public double calcularIptu(){
-        
-    //}
+    public double calcularIptu(){
+        double iptu = 0;
+        if (tipo == 1){ // 1 - casa 
+            if (tamanho <= 100) {
+                iptu = valorCompra * 0.01;
+            }
+            else{
+                iptu = valorCompra * 0.03;
+            }
+        }
+        else if (tipo == 2){
+            if (tamanho <= 100) {
+                iptu = valorCompra * 0.02;
+            }
+            else{
+                iptu = valorCompra * 0.05;
+            }
+        }
+        return iptu; 
+    }
+
+    public double valorDeVenda(){
+        double preco = 0;
+        if (identificador == true){  
+            if (tamanho <= 100) {
+                preco = valorCompra * 1.10;
+            }
+            else{
+                preco = valorCompra * 1.80;
+            }
+        }
+        else {
+            if (tamanho <= 100) {
+                preco = valorCompra * 1.05;
+            }
+            else{
+                preco = valorCompra * 1.20;
+            }
+        }
+        return preco;
+    }
+    
+    public short idadeImovel(){
+        short idade = (short)(2024 - anoConstrucao);
+        return idade;
+    }
+    public String toString() {
+        String iden;
+        String tip; 
+
+        if (tipo == 1) {
+            tip = "Casa";
+        }
+        else{
+            tip = "Apartamento";
+        }
+        if (identificador == true) {
+            iden = "Area nobre.";
+        }
+        else{
+            iden = "Area comum";
+        }
+        return "Tipo do imóvel: " + tip + 
+               "\nNome do proprietário: " + proprietario + 
+               "\nTamanho do imóvel: " + tamanho + 
+               "\nidentificador: " + iden + 
+               "\nAno de construção: " + anoConstrucao + 
+               "\nValor da compra: " + valorCompra;
+    }
+
+    
 
 
 }
